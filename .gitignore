@@ -1,0 +1,7 @@
+*
+
+!/assets
+!/public
+!/.gitignore
+!/package.json
+!/webpack.config.js
