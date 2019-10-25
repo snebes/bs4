@@ -2,6 +2,8 @@
     "devDependencies": {
         "@symfony/webpack-encore": "^0.27",
         "bootstrap": "^4.3",
+        "node-sass": "^4.13.0",
+        "sass-loader": "^7.0",
         "webpack-notifier": "^1.6"
     },
     "license": "MIT",
