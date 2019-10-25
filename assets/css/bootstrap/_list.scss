@@ -1,0 +1,77 @@
+.list-feed-item {
+    position: relative;
+    padding-bottom: 1.25rem;
+    padding-left: 1.75rem;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: .31252rem;
+        background-color: #fff;
+        display: inline-block;
+        border: 2px solid #999;
+        z-index: 3;
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: .31252rem;
+        left: .1875rem;
+        bottom: -.43752rem;
+        width: 0;
+        border-left: 1px solid #999;
+        border-right: 1px solid #999;
+        z-index: 2;
+    }
+
+    &:first-child:after {
+        top: 0.5rem;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+
+        &:after {
+            content: none;
+        }
+    }
+
+    &[class*=border-]:before,
+    &[class*=border-]:after {
+        border-color: inherit;
+    }
+}
+
+.list-feed-solid .list-feed-item:before {
+    content: '';
+    border-width: 0.25rem;
+    width: 0;
+    height: 0;
+}
+
+.list-feed-square .list-feed-item:before {
+    content: '';
+    border-radius: 0;
+}
+
+.list-feed-rhombus .list-feed-item:before {
+    content: '';
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 0;
+}
+
+.list-feed-time .list-feed-item {
+    margin-left: 3.25rem;
+
+    .feed-time {
+        position: absolute;
+        left: -3.25rem;
+        top: 0;
+    }
+}

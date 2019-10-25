@@ -1,7 +1,3 @@
-*
-
-!/assets
-!/public
-!/.gitignore
-!/package.json
-!/webpack.config.js
+node_modules
+public/build
+yarn.lock
